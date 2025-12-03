@@ -1,6 +1,6 @@
 # ToyTopia - React Toy Store
 
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 
 ToyTopia is a modern and interactive toy store web application built with **React**, **Firebase Authentication**, and **TailwindCSS**. It allows users to browse toys, view details, register/login, and enjoy a responsive and dynamic UI experience.
 
