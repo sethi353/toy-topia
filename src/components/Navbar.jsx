@@ -79,12 +79,7 @@ const Navbar = () => {
               <Link to="/profile" className="hover:underline" onClick={() => setMenuOpen(false)}>My Profile</Link>
             )}
             <Link to="/contact" className="hover:underline" onClick={() => setMenuOpen(false)}>Contact</Link>
-            {!user && (
-              <>
-                <Link to="/login" className="btn btn-primary mt-2" onClick={() => setMenuOpen(false)}>Login</Link>
-                <Link to="/register" className="btn btn-secondary mt-2" onClick={() => setMenuOpen(false)}>Register</Link>
-              </>
-            )}
+            
           </div>
         )}
       </div>

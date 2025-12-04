@@ -10,6 +10,7 @@ import ForgetPassword from "./pages/ForgetPassword.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import PrivateRoute from "./routes/PrivateRoute.jsx";
 import AllToys from "./pages/AllToys.jsx";
+import BookNow from "./pages/BookNow.jsx";
 
 
 
@@ -59,6 +60,15 @@ function App() {
           
           } 
         />
+        <Route
+  path="/book/:id"
+  element={
+    <PrivateRoute>
+      <BookNow />
+    </PrivateRoute>
+  }
+/>
+
          <Route path="/all-items" element={<AllToys />} />
 
           <Route path="*" element={<NotFound />} />

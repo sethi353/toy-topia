@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const ToyDetails = () => {
   const { id } = useParams();
@@ -35,6 +36,21 @@ const ToyDetails = () => {
           <p className="mt-1">Available Quantity: {toy.availableQuantity}</p>
           <p className="mt-1">Seller: {toy.sellerName} ({toy.sellerEmail})</p>
 
+
+
+        {/* Toy Specifications */}
+          <section className="mb-6">
+            <h3 className="text-xl font-semibold mb-2">Specifications</h3>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Category: {toy.subCategory}</li>
+              <li>Available Quantity: {toy.availableQuantity}</li>
+              <li>Price: ${toy.price}</li>
+              <li>Rating: {toy.rating} ⭐</li>
+            </ul>
+          </section>
+
+
+
           <form onSubmit={handleSubmit} className="mt-4 flex flex-col gap-3">
             <input
               type="text"
@@ -54,6 +70,12 @@ const ToyDetails = () => {
             />
             <button type="submit" className="btn btn-primary mt-2">Try Now</button>
           </form>
+          <Link
+  to={`/book/${toy.toyId}`}
+  className="btn btn-secondary mt-4"
+>
+  Book Now
+</Link>
         </div>
       </div>
     </div>

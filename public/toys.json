@@ -4,7 +4,7 @@
     "toyName": "Labubu Doll",
     "sellerName": "Toys R Us Local",
     "sellerEmail": "contact@toysruslocal.com",
-    "price": 49.99,
+    "price": 60.99,
     "rating": 4.7,
     "availableQuantity": 75,
     "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving.",
@@ -52,11 +52,11 @@
     "toyName": "Plush Teddy Bear",
     "sellerName": "Cuddly Toys",
     "sellerEmail": "contact@cuddlytoys.com",
-    "price": 14.99,
+    "price": 15.99,
     "rating": 4.8,
     "availableQuantity": 120,
     "description": "Soft and cuddly teddy bear for kids of all ages.",
-    "pictureURL": "https://i.ibb.co.com/jPDP2Rnq/download-9.jpg",
+    "pictureURL": "https://i.ibb.co.com/4Qs0sgF/download-42.jpg",
     "subCategory": "Stuffed Toys"
   },
   
@@ -91,12 +91,61 @@
     "toyName": "Hot Wheels Car Set",
     "sellerName": "Local HotWheels Shop",
     "sellerEmail": "contact@hotwheels.com",
-    "price": 19.99,
-    "rating": 4.6,
+    "price": 20.99,
+    "rating": 4.7,
     "availableQuantity": 100,
     "description": "Exciting Hot Wheels car set for endless racing fun.",
-    "pictureURL": "https://i.ibb.co.com/q3JNgyKR/images-6.jpg",
+    "pictureURL": "https://i.ibb.co.com/q3HJtGyM/images-13.jpg",
+    "subCategory": "Vehicles"
+  },
+  {
+    "toyId": 9,
+    "toyName": "Labubu Doll",
+    "sellerName": "Toys R Us Local",
+    "sellerEmail": "contact@toysruslocal.com",
+    "price": 49.99,
+    "rating": 4.7,
+    "availableQuantity": 75,
+    "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving.",
+    "pictureURL": "https://i.ibb.co.com/BK7zGg1b/download-41.jpg",
+    "subCategory": "Building Blocks"
+  },
+  {
+    "toyId": 10,
+    "toyName": "Puzzle 3D",
+    "sellerName": "Local Barbie Store",
+    "sellerEmail": "contact@barbiestore.com",
+    "price": 50.99,
+    "rating": 4.5,
+    "availableQuantity": 50,
+    "description": "A classic Barbie doll with multiple accessories.",
+    "pictureURL": "https://i.ibb.co.com/Z1BQqKFT/download-38.jpg",
+    "subCategory": "Puzzles"
+  },
+  {
+    "toyId": 11,
+    "toyName": "Doll house",
+    "sellerName": "Music Toys",
+    "sellerEmail": "contact@musictoys.com",
+    "price": 36.99,
+    "rating": 4.4,
+    "availableQuantity": 30,
+    "description": "Mini drum set to introduce children to music.",
+    "pictureURL": "https://i.ibb.co.com/Lspp022/download-39.jpg",
+    "subCategory": "Dolls"
+  },
+  {
+    "toyId": 12,
+    "toyName": "Hot Car",
+    "sellerName": "Puzzle World",
+    "sellerEmail": "contact@puzzleworld.com",
+    "price": 25.99,
+    "rating": 4.3,
+    "availableQuantity": 40,
+    "description": "3D puzzle to enhance problem-solving and creativity.",
+    "pictureURL": "https://i.ibb.co.com/HTG4jvjg/download-40.jpg",
     "subCategory": "Vehicles"
   }
+
 ]
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ToyCard from "../components/ToyCard";
 import Slider from "../components/Slider";
+import { Link } from "react-router-dom"; 
 
 const Home = () => {
   const [toys, setToys] = useState([]);
@@ -18,12 +19,21 @@ const Home = () => {
       <Slider />
 
       {/* Popular Toys */}
-      <h1 className="text-3xl font-bold mb-6 mt-6">Popular Toys</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {toys.map(toy => (
-          <ToyCard key={toy.toyId} toy={toy} />
-        ))}
-      </div>
+<h1 className="text-3xl font-bold mb-6 mt-6">Popular Toys</h1>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  {toys.slice(0, 8).map(toy => ( 
+    <ToyCard key={toy.toyId} toy={toy} />
+  ))}
+</div>
+<div className="flex justify-center mt-6">
+  <Link
+    to="/all-items"
+    className="btn btn-primary px-6 py-2 text-lg"
+  >
+    See More
+  </Link>
+</div>
+
 
        
         {/*  Extra Section 1 */}
@@ -34,28 +44,28 @@ const Home = () => {
   <h2 className="text-3xl font-bold mb-6">Top Rated Toys</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
     <div className="border-0 rounded-lg p-4 shadow hover:shadow-lg transition">
-      <img src="https://i.ibb.co.com/q3JNgyKR/images-6.jpg" 
+      <img src="https://i.ibb.co.com/DD6Wq0wy/download-37.jpg" 
            alt="Super Action Figure" className="w-full h-48 object-cover rounded" />
       <h3 className="text-xl font-bold mt-2">Super Action Figure</h3>
       <p className="text-gray-600 mt-1">Best-selling action figure with amazing features.</p>
     
     </div>
     <div className="border-0 rounded-lg p-4 shadow hover:shadow-lg transition">
-      <img src="https://i.ibb.co.com/q3JNgyKR/images-6.jpg" 
+      <img src="https://i.ibb.co.com/Z1BQqKFT/download-38.jpg" 
            alt="Puzzle Cube" className="w-full h-48 object-cover rounded" />
       <h3 className="text-xl font-bold mt-2">Puzzle Cube</h3>
       <p className="text-gray-600 mt-1">Challenging puzzle cube for all ages.</p>
     
     </div>
     <div className="border-0 rounded-lg p-4 shadow hover:shadow-lg transition">
-      <img src="https://i.ibb.co.com/q3JNgyKR/images-6.jpg" 
+      <img src="https://i.ibb.co.com/Lspp022/download-39.jpg" 
            alt="Dollhouse Set" className="w-full h-48 object-cover rounded" />
       <h3 className="text-xl font-bold mt-2">Dollhouse Set</h3>
       <p className="text-gray-600 mt-1">Complete dollhouse set for imaginative play.</p>
       
     </div>
     <div className="border-0 rounded-lg p-4 shadow hover:shadow-lg transition">
-      <img src="https://i.ibb.co.com/q3JNgyKR/images-6.jpg" 
+      <img src="https://i.ibb.co.com/HTG4jvjg/download-40.jpg" 
            alt="Remote Car" className="w-full h-48 object-cover rounded" />
       <h3 className="text-xl font-bold mt-2">Remote Car</h3>
       <p className="text-gray-600 mt-1">High-speed remote-controlled car with lights.</p>
@@ -71,7 +81,13 @@ const Home = () => {
   <p className="text-gray-700 max-w-3xl mx-auto mb-8">
     Enjoy up to 30% off on selected toys! Limited time seasonal offers for our valued customers.
   </p>
-  <button className="btn btn-primary">Shop Now</button>
+  
+  <Link
+    to="/all-items"
+    className="btn btn-primary px-6 py-2 text-lg"
+  >
+    Shop Now
+  </Link>
 </section>
 
 
